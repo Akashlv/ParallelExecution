@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+
+    <listeners>
+        <listener class-name="com.synchronoss.inow.common.util.CustomReport"/>
+        <listener class-name="com.synchronoss.inow.common.util.CustomSummaryReport"/>
+    </listeners>
+
+    <test thread-count="5" parallel="tests" name="ASR SEND">
+        <parameter name="browserName" value="Chrome"/>
+        <classes>
+            <class name="com.synchronoss.inow.vfo.testscripts.VFO_INOW_TEST_001"/>
+        </classes>
+    </test>
+
+    <test thread-count="5" parallel="tests" name="ASR RECEIVE">
+        <parameter name="browserName" value="Chrome"/>
+        <classes>
+            <class name="com.synchronoss.inow.vfo.testscripts.VFO_INOW_TEST_002"/>
+        </classes>
+    </test>
+    <!-- Test -->
+</suite>
+<!-- Suite -->

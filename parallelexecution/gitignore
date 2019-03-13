@@ -1,0 +1,26 @@
+# Created by .ignore support plugin (hsz.mobi)
+**/target/*
+.idea
+.settings
+.classpath
+*.class
+.project
+*.log*
+target/*
+test-output/*
+/test-output/
+**/*.iml
+**/*.log
+/test-output/
+/XMLDownloads/
+/screenshots/
+**/*.png/
+*.png/
+**/*.html/
+/*.html/
+*.html
+/target/
+/test-results/downloads/
+/bin/
+**/test-output/*
+testng.xml
